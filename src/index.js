@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
-import 'tachyons'; 
+import initScrollReveal from "./scripts/scrollReveal";
+import initTiltEffect from "./scripts/tiltAnimation";
+import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+initScrollReveal(targetElements, defaultProps);
+initTiltEffect();
